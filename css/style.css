@@ -1,0 +1,1402 @@
+﻿
+body {
+	margin: 0;
+	padding: 0;
+	background: #333;
+	background: -webkit-linear-gradient(#111, #222, #333, #555, #333, #222, #111);
+	background: linear-gradient(#111, #222, #333, #555, #333, #222, #111);
+}
+
+/*Navbar stylings*/
+
+nav.navbar.navbar-fixed-top {
+	background: #111;
+	border-bottom: 3px solid #C1272D;
+}
+
+.navbar-default .navbar-brand {
+	color: #E0E0E0;
+}
+
+.navbar-brand.brandImg img {
+	max-height: 40px;
+}
+		
+.navbar-brand.brandImg {
+	padding: 5px 20px;
+}
+
+.navbar-header p.navbar-text {
+	color: white;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 20px;
+	font-family: 'Open Sans';
+}
+
+.navbar-brand.navbar-right {
+	cursor: pointer;
+}
+
+/* Generic classes */
+
+.marginTop {
+	margin-top: 50px;
+}
+
+.center {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Top Steps styling */
+
+.stepsTitle {
+	background: #555;
+	color: #5BC0DE;
+	padding: 10px 10px;
+	display: block;
+	/*cursor: pointer;*/
+}
+
+li.active>.stepsTitle {
+	font-weight: bold;
+	background: #eee;
+	color: #C1272D;
+}
+
+li.steps {
+	text-align: center;
+}
+
+li .stepsTitle:hover {
+	/*background: #777;*/
+}
+
+li.active>.stepsTitle:hover {
+	background:#fff;
+}
+
+/* Pendant Stylings */
+
+div#pendant {
+	width: 20rem;
+	vertical-align: middle;
+	border-radius: 2rem;
+	box-shadow: inset 0 0 1.475rem rgb(125, 84, 8), .1rem .075rem .475rem .05rem rgba(50, 50, 50, 0.55);
+	background: #FFEB3B;
+	display: inline-table;
+}
+
+div.button {
+	width: 12.5rem;
+	height: 12.5rem;
+	vertical-align: middle;
+	border-radius: 2rem;
+	
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;
+	box-shadow: inset 0 0 3.075rem 0.05rem rgb(0, 0, 0), .1rem .075rem .575rem .05rem rgba(50, 50, 50, 0.55);
+	background: #3E3E3E;
+	
+	position:relative;
+}
+
+div#pendant div.button{
+	margin: 3.75rem auto;
+}
+
+div.btnLabel {
+	border: #292929 solid .75rem;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 7.5rem;
+	height: 7.5rem;
+	width: 7.5rem;
+	margin: auto auto;
+	border-radius: 1.8rem;
+	font-size: 7.5rem;
+	font-family: monospace;
+	font-weight: bold;
+	display: inline-block;
+	box-shadow: inset 0 0 .25rem #000000, .075rem .075rem .25rem .125rem rgba(50, 50, 50, 0.75);
+	background: #d1d1d1;
+	
+	margin:auto;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+
+.buttonSpace {
+	width: 12.5rem;
+	height: 12.5rem;
+	margin: 3.75rem auto;
+	border-radius: 2rem;
+	//background-color: rgba(181, 171, 91, 0.66);
+	background-color: rgba(148, 139, 67, 0.66);
+	box-shadow: inset 0.05rem 0.125rem .5rem #555;
+}
+.buttonSpace div{
+	display: none;
+}
+.button > .btnLabel{
+	display: inline-block;
+}
+.deleteButton{
+	position: absolute;
+	color: rgba(0,0,0,0.50);
+	display: none;
+	
+	left: 12.7rem;
+	font-size: 2.5em;
+}
+.deleteButton:hover{
+	color: rgba(0,0,0,1);
+	cursor:pointer;
+}
+.button > i.deleteButton{
+	display: inline-block;
+}
+.highlightDrop{
+	/*box-shadow: white 0px 0px 20px 20px;*/
+	box-shadow: 0rem 0rem 1.5rem .75rem rgba(255,255,255,0.70);
+	background-color: rgba(181, 171, 91, 0.66);
+}
+.emptySlot{
+	/*box-shadow: white 0px 0px 20px 20px;
+	box-shadow: 0rem 0rem 1.5rem .75rem rgba(255,255,255,0.70);
+	background-color: rgba(181, 171, 91, 0.66);*/
+	
+	box-shadow: 0rem 0rem 1.5rem .75rem rgba(255, 125, 125, 0.7);
+	background-color: rgba(181, 91, 91, 0.66);
+}		
+.infoDisplay{
+	position: absolute;
+	left: 22.75rem;
+	display: block;
+	border-left: #FF2828 .75rem solid;
+	height: 13.5rem;
+	font-size: 1.75rem;
+	padding-left: 1rem;
+	font-family: 'Roboto Slab', serif;
+	color: #222;
+	left: 17rem;
+	min-width: 25rem;
+}
+.infoDisplay strong{
+	font-size: 2rem;
+}
+.infoDisplay.switchInfo{
+	height: 28.75rem;
+}
+.infoDisplay span.btnCover{
+	display: none;
+}
+/* Text Stylings */
+
+.titleText {
+	color: #FFFFFF;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	text-shadow: 5px 5px 12px #222;
+	margin-top: 0;
+}
+
+/* Product Area Styling */
+
+.productArea {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.productArea .products {
+	background: rgba(255,255,255,0.3);
+	padding: 20px 15px;
+}
+
+/*.overflowControl {
+	overflow-y: auto;
+	overflow-x: hidden;
+}*/
+
+.rightPanelActive {
+	opacity: 1;
+	z-index: 4;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+button#prevBtn {
+	/*opacity: 0;
+	left: -5000px;*/
+	display:none;
+}
+
+.rightPanelInactive {
+	opacity: 0;
+	z-index: 1;
+	position: absolute;
+	left: -5000px;
+}
+
+.products {
+	height: 515px;
+	overflow: auto;
+	-webkit-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+}
+
+.productsBorder {
+	height: 515px;
+	width: 2px;
+	margin: 0 0.5%;
+	display: inline-block;
+	background: #bbb;
+	float: left;
+}
+
+/* Flexbox */
+
+.panel-primary {
+	border: #999;
+	box-shadow: 3px 1px 4px -1px #555;
+}
+
+.panel-primary>.panel-heading {
+	color: #fff;
+	background-image: none;
+	background-color: #f55;
+	border:0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.panel-body {
+	background: #ccc;
+	border: 1px solid #888;
+	overflow: auto;
+}
+
+.flexContainer {
+	-webkit-perspective: 1000;
+	        perspective: 1000;
+}
+
+.flipper.flipped {
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	height: 100%;
+	width: 100%;
+}
+
+.wiringDiagram {
+	position: relative;
+    width: 65%;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+    z-index: 1;
+}
+
+.wiringDiagram img {
+	max-height: 157px;
+	width: 228px;
+	position: absolute;
+	-webkit-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+}
+
+.front {
+	z-index: 2;
+	-webkit-transform: rotateY(0deg);
+	        transform: rotateY(0deg);
+}
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	        transform: rotateY(180deg);
+}
+
+.partTitle {
+	font-size: 2rem;
+}
+
+ul.flexContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;   
+
+	-webkit-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-align-content: flex-start;
+	    -ms-flex-line-pack: start;
+	        align-content: flex-start;
+	list-style-type: none;
+	padding: 0;
+}
+
+.flexItem {
+	width: 400px;
+	height: 200px;
+	margin: 1em;
+	border: 1px solid #333;
+	position: relative;
+	list-style-type: none;
+}
+
+.partNumber {
+	position: absolute;
+	bottom: -33px;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	font-size: 15px;
+	padding-left: 1rem;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+
+.dragOrClick{
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	font-size: 15px;
+	font-weight: normal;	
+	padding: 0px 5px;
+	height: 20px;
+	width: fit-content;
+	/*z-index:-1;*/
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;	
+
+}
+.front:hover>.dragOrClick {
+	background: rgba(150,0,0,0.85);
+	bottom: 0px;
+}
+
+.front, .back {
+	width: 100%;
+	height: 100%;
+	cursor: all-scroll;
+	cursor: grab;
+	cursor: -webkit-grab;
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.fa-info-circle, .fa-chevron-circle-left {
+	display: inline;
+	position: absolute;
+	color: rgba(0,0,0,0.7);
+	top: 0;
+	right: 0;
+	margin: 1rem;
+	cursor: pointer;
+}
+
+.fa-info-circle:hover, .fa-chevron-circle-left:hover {
+	color: rgba(0,0,0,1);
+}
+
+.front:hover>.partNumber {
+	background: rgba(150,0,0,0.85);
+	bottom: 0px;
+}
+
+.twoButtonPendant {
+	background: url(../images/twobutton.png) no-repeat center center;
+}
+
+.fourButtonPendant {
+	background: url(../images/fourbutton.png) no-repeat center center;
+}
+
+.sixButtonPendant {
+	background: url(../images/sixbutton.png) no-repeat center center;
+}
+
+.eightButtonPendant {
+	background: url(../images/eightbutton.png) no-repeat center center;
+}
+
+.tenButtonPendant {
+	background: url(../images/tenbutton.png) no-repeat center center;
+}
+
+.twelveButtonPendant {
+	background: url(../images/twelvebutton.png) no-repeat center center;
+}
+
+.cableNoStrain {
+	background: url(../images/pendantcable_no_strain.jpg) no-repeat center center;
+}
+.cableWithStrain {
+	background: url(../images/pendantcable_with_strain.jpg) no-repeat center center;
+}
+.noCable, .noLight {
+	background: url(../images/No_sign.jpg) no-repeat center center;
+}
+
+.flexImage {
+	background-size: cover;
+	height: 100%;
+}
+
+.front.firstPanelItem {
+	cursor: pointer;
+}
+.front.cableType {
+	cursor: pointer;
+}
+
+.panel-heading span:after {
+	font-family:'Glyphicons Halflings';
+	content:"\e114";
+	float: right;
+	color: white;
+}
+
+.panel-heading span.panelOpen:after {
+	content:"\e080";
+}
+
+.panelToggler {
+	cursor: pointer;
+}
+
+.partNumber.sectionTwoCard {
+	bottom: -33px;
+	z-index:2;
+}
+
+/* Styles for the second page items */
+
+/* All draggable page two items have the partTwoItem class, allowing the clones made on all types to have sizes */
+
+
+.dragDropItem.ui-draggable.ui-draggable-handle{
+	background-size: cover;	
+	
+}
+.dragDropItem.ui-draggable-dragging {
+	height: 200px;
+	width: 250px;
+}
+
+.buttonSpace.twoButtonSwitch,
+.buttonSpace.selectorSwitch,
+.buttonSpace.keySwitch,
+.buttonSpace.toggleSwitch,
+.buttonSpace.altSwitch,
+.buttonSpace.pushLock,
+.buttonSpace.blindRubber,
+.buttonSpace.oneButtonSwitch {
+	float: none;
+}
+
+/* I. Two Button Switches*/
+
+.twoButtonSwitch {
+	background: url(../images/two_switch.png) no-repeat center center;
+	background-size: cover;
+	height: 100%;
+	width:35%;
+	float:left;
+}
+/* I.IV On and Off Two Button Switches*/
+
+.onOff.twoButtonSwitch {
+	background: url(../images/onoff_switch.png) no-repeat center center;
+	background-size: cover;
+}
+
+/* II. Selector Switch */
+
+.selectorSwitch {
+	background: url(../images/selector_switch.png) no-repeat center center;
+	height: 100%;
+	width:35%;
+	float:left;
+}
+
+/* III. Key Switch */
+
+.keySwitch {
+	background: url(../images/key_switch.png) no-repeat center center;
+	height: 100%;
+	width:35%;
+	float:left;
+}
+
+/* IV. toggle Switch */
+
+.toggleSwitch {
+	background: url(../images/toggle_switch.png) no-repeat center center;
+	height: 100%;
+	width:35%;
+	float:left;
+}
+
+/* V. Key Switch */
+
+.altSwitch {
+	background: url(../images/alternate_switch.png) no-repeat center center;
+	height: 100%;
+	width:35%;
+	float:left;
+}
+
+/* VI. Push Lock */
+
+.pushLock {
+	background: url(../images/push_lock.png) no-repeat center center;
+	height: 100%;
+	width:35%;
+	float:left;
+}
+
+/* VII. Blind Rubber */
+
+.blindRubber {
+	background: url(../images/blind_rubber.png) no-repeat center center;
+	height: 100%;
+	width:100%;
+	float:left;
+}
+
+/* VIII. One Button */
+
+.oneButtonSwitch {
+	background: url(../images/one_switch.png) no-repeat center center;
+	height: 100%;
+	width:35%;
+	float:left;
+}
+
+
+/* IX. One Button */
+.buzzer {
+	background: url(../images/buzzer.png) no-repeat center center;
+	height: 100%;
+	width: 100%;
+	float:left;
+}
+
+/* X. One Button */
+.horn {
+	background: url(../images/horn.png) no-repeat center center;
+	height: 100%;
+	width: 100%;
+	float:left;
+}
+
+/*XI. Pilot Light*/
+.pilotLight{
+	background: url(../images/pilot_light.jpg) no-repeat center center;
+	height: 100%;
+	width: 100%;
+	float:left;
+}
+
+.smallThirdLine {
+	font-size: 1.25rem;
+}
+
+/* Previous/Next Button Styling */
+
+.btn-aci {
+	background: #f33;
+	color: white;
+	border-radius: 0;
+}
+
+.btn-aci:hover, .btn-aci:focus  {
+	color: white;
+	background: #f11;
+	background: -webkit-linear-gradient(#f33,#f11); /* For Safari 5.1 to 6.0 */ /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f33,#f11)
+}
+
+/* Last Panel */
+
+.estimate {
+	font-size: 20px;
+	color: #f33;
+	font-weight: bold;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.unfilled {
+	box-shadow: 0px 0px 0px 1px #f44;
+}
+
+.form-style-8{
+	font-family: 'Open Sans', arial, sans;
+	width: 500px;
+	padding: 30px;
+	background: #FFFFFF;
+	margin: 25px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+.form-style-8 h2{
+	background: #4D4D4D;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 20px;
+	margin: -30px -30px 20px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 input[type="tel"],
+.form-style-8 textarea,
+.form-style-8 select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+.form-style-8 textarea{
+	resize:none;
+	overflow-y: auto;
+	height: 90px;
+	border: 1px solid #ddd;
+}
+.form-style-8 input[type="button"], 
+.form-style-8 input[type="submit"]{
+	box-shadow: inset 0px 1px 0px 0px #45D65E;
+	background-color: #2CBB44;
+	border: 1px solid #27A047;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 14px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 15px;
+	font-family: 'Open Sans', Arial;
+}
+.form-style-8 input[type="button"]:hover, 
+.form-style-8 input[type="submit"]:hover {
+	background-color: #34CA46;
+}
+
+.form-style-8 input#confirmPendant{
+	background-color: #F78738;
+	box-shadow: inset 0px 0px 4px 0px #D65245;
+	border: 1px solid #A07B27;
+}
+.form-style-8 input#confirmPendant:hover {
+	background-color: #EAAA4A;
+}
+
+/* Animated buttons */
+
+.buttonSpace.switch.on {
+	box-shadow: inset 0 0 1.475rem rgb(2, 58, 9), .1rem .075rem .475rem .05rem rgba(50, 50, 50, 0.55);
+	background: #10901A;
+}
+
+.buttonSpace.switch.on .btnLabel {
+	box-shadow: inset 0 0 .25rem #000000, .075rem .075rem .25rem .125rem rgba(50, 50, 50, 0.75);
+	border-color: #10901A;
+}
+
+.buttonSpace.switch.off {
+	box-shadow: inset 0 0 1.475rem rgb(125, 16, 8), .1rem .075rem .475rem .05rem rgba(50, 50, 50, 0.55);
+	background: #EC1000;
+}
+
+.buttonSpace.switch.off .btnLabel {
+	border-color: #EC1000;
+	
+}
+
+.buttonSpace.button.pushLock {
+	border-radius: 6rem;
+	background: #FF6A00;
+	box-shadow: inset 0 0 1rem rgba(0,0,0,0.6), 0rem 0rem 2rem rgba(0,0,0,0.75);
+}
+
+.buttonSpace.button.pushLock .btnLabel {
+	border: 0;
+	background: none;
+	box-shadow: 0 0 0 0 rgba(0,0,0,0);
+	-webkit-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+}
+
+.hover {
+	background: rgba(255,255,255,0.55);
+}
+
+.buttonSpace.selectorSwitch {
+	border-radius: 10rem;
+}
+
+.btnLabel.round{
+    border-radius: 4rem;
+}
+
+.buttonSpace.switch.on .btnLabel:hover {
+	border-color: green;
+	background: #bbb;
+	box-shadow: inset 0 0 5px 1px black, 0 0 20px 10px rgba(0,0,0,0.35);
+}
+
+.buttonSpace.switch.off .btnLabel:hover {
+	border-color: #E20000;
+	background: #bbb;
+	box-shadow: inset 0 0 5px 1px black, 0 0 20px 10px rgba(0,0,0,0.35);
+}	
+
+.buttonSpace.button .btnLabel:hover {
+	border-color: #151515;
+	background: #bbb;
+	box-shadow: inset 0 0 4px 2px rgba(0,0,0,0.85), 0 0 20px 10px rgba(0,0,0,0.5);
+}
+
+.buttonSpace.button.selectorSwitch .btnLabel {
+	width: 4rem;
+	height: 11rem;
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+	-webkit-transition: 0.5s all;
+	transition: 0.5s all;
+	border: 0.5rem rgba(216, 215, 215, 0.25) solid;
+	box-shadow: 0px 0px 30px 8px rgba(34,34,34,0.6);
+	background: -webkit-linear-gradient(left,#323232,#101010,#323232);
+	background: linear-gradient(to right,#323232,#101010,#323232);
+	border-radius: 1rem;
+}
+
+.buttonSpace.button.selectorSwitch .btnLabel:hover {
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+.buttonSpace.button.blindRubber .btnLabel {
+	opacity: 0;
+}
+
+.buttonSpace.button.selectorSwitch .btnLabel:hover {
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+.buttonSpace.button.toggleSwitch .btnLabel:hover {
+	-webkit-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+	right: -15px;
+}
+.buttonSpace.button.toggleSwitch .btnLabel {
+	box-shadow: inset 0 0 0px 0px rgba(84,84,84,0.5), 0 0 0 0 rgba(0,0,0,0);
+	background: none;
+	border: 0;
+	background-image: url("../images/toggle1.png");
+	-webkit-transform: rotate(-17deg);
+	        transform: rotate(-17deg);
+	-webkit-transition: 0.3s all ease;
+	transition: 0.3s all ease;
+	position: relative;
+	top: 14px;
+	right: 15px;
+	width: 75%;
+	background-repeat: no-repeat;
+}
+
+.buttonSpace.button.pushLock .btnLabel:before {
+	content: "\f021";
+	font-family: "FontAwesome";
+	color: #dedede;
+}
+
+.buttonSpace.ui-droppable.button.pushLock .btnLabel:hover {
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	border:0;
+	background: none;
+	box-shadow: inset 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+}
+
+
+
+.scroller {
+	height: 100px;
+	width: 21%;
+	margin-left: 20px;
+	top: -100px;
+	position: relative;
+	left: 20.5rem;
+	text-align: center;
+	color: white;
+	background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.75));
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.75));
+}
+
+.scroller.up {
+	top: -715px;
+	background: -webkit-linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0));
+	background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0));
+}
+
+#hoverScroll {
+	height: 0px;
+}
+
+.close {
+	font-size: 4rem;
+	line-height: 2rem;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-button {
+	width: 8px;
+	height:5px;
+}
+::-webkit-scrollbar-track {
+	background:#eee;
+	border: thin solid lightgray;
+	box-shadow: 0px 0px 3px #dfdfdf inset;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+	background:#333;
+	border: thin solid gray;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	box-shadow: 0px 0px 3px #f77 inset;
+}			
+	
+.modalStyle {
+	background: rgba(255,255,255,0.8);
+	padding: 1rem;
+	margin-top: 5rem;
+}
+
+.modalInfo {
+	position: relative;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.tutorialReplay {
+	position: fixed;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 6rem;
+	color: white;
+	margin-top: 2rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	text-shadow: 1px 1px 9px rgba(0,0,0,0.5);
+	-webkit-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+}
+
+.tutorialReplay:hover {
+	background: #279DC1;
+}
+
+.mobileProducts {
+	display: none;
+}
+
+#diagramEnhancer {
+	text-align: center;
+}
+
+#diagramEnhancer img {
+	width: 50rem;
+}
+
+@media screen and (max-width: 600px) {
+	
+	#diagramEnhancer img {
+		width: 20rem;
+	}	
+	
+}
+
+.number a {
+	text-decoration: none;
+	color: white;
+	font-size: 2rem;
+	padding: 5px;
+}
+
+.number a:hover {
+	border: 2px solid white;
+}
+
+.navButtons {
+	margin-top: 10px;
+}
+
+a.mobileClose, a.mobileClose:hover, a.mobileClose:focus, a.mobileClose:active {
+	color: white;
+	opacity: 0.75;
+}
+
+a.mobileClose {
+	color: white;
+	opacity: 0.5;
+	display: none;
+}
+
+.progress{
+	float: left;
+	position: absolute;
+	width: 20%;
+	left: 38%;
+}
+.progress-numbers{
+    float: left;
+    position: absolute;
+    left: 58.5%;
+}
+.tutorialSlideOne {
+	display: none;
+}
+
+.tutorialSlideTwo {
+	background-image: url('../tutorialslides/slideone.jpg');
+}
+
+.tutorialSlideThree {
+	background-image: url('../tutorialslides/slidetwo.jpg');
+}
+
+.tutorialSlideFour {
+	background-image: url('../tutorialslides/slidethree.jpg');
+}
+
+.tutorialSlideFive {
+	background-image: url('../tutorialslides/slidefour.jpg');
+}
+
+.slideTutorial {
+	height: 50rem;
+	background-size: cover;
+	margin: 0 auto;
+}
+
+.subModalText:after {
+	font-style: italic;
+	font-size: 1em;
+	float: right;
+}
+
+.modalTextOne:after {
+	content: "Press next to continue through the tutorial.";
+	font-weight: bold;
+}
+
+.modalTextTwo:after {
+	content: "";
+}
+
+.modalTextThree:after {
+	content: "Press the info circle for wiring diagrams.";
+}
+
+.modalTextFour:after {
+	content: "When the slot lights up, you can drop the button/switch into it.";
+}
+
+.modalTextFive:after {
+	content: "When your pendant looks complete and you've filled out your contact info, send the request and our staff will be in touch!";
+}
+
+#continue{
+	display:none;
+}
+input[type="radio"][name="cable"], input[type="radio"][name="light"]{
+	display:none;
+}
+
+
+/* Screen fixes for non-desktops */
+
+@media screen and (max-width: 995px) {
+	.tutorialReplay {
+		margin-top: 6rem;
+		z-index: 5;
+		left: 0;
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	li.steps {
+		float: left;
+		width: 33%;
+		display: table-cell;
+	}
+	
+	li.steps span.stepsTitle {
+		height: 60px;
+		font-size: 13px;
+	}
+
+	.navbar-header p.navbar-text {
+		font-size: 1.5rem;
+	}
+	
+	.productArea {
+		margin: 0;
+	}
+	
+	h2 {
+		font-size: 20px;
+	}
+	
+	.mobileProducts {
+		position: absolute;
+		display: block;
+		right: 0;
+		height: 50px;
+		width: 50px;
+		text-align: center;
+		line-height: 6rem;
+		color: white;
+		margin-top: 6rem;
+		font-size: 1.5rem;
+		cursor: pointer;
+		z-index: 5;
+		text-shadow: 1px 1px 9px rgba(0,0,0,0.5);
+		-webkit-transition: 0.5s all ease;
+		transition: 0.5s all ease;
+	}
+
+	.mobileProducts:hover {
+		background: #FF5555;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+	.navbar-brand.brandImg img {
+		max-height: 30px;
+	}
+	
+	.navbar-header p.navbar-text {
+		display: none;
+	}
+	
+	.navbar {
+		min-height: 30px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.products.col-md-6 {
+		width: 57%;
+	}
+}
+
+@media screen and (min-height: 800px) {
+
+	.products, .productsBorder {
+		height: 615px;
+	}
+
+} 
+
+@media screen and (min-height: 1000px){
+
+	.products, .productsBorder {
+		height: 745px;
+	}			
+	
+	.scroller.up {
+		top: -845px;
+	}
+
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+	.nav-tabs.nav-justified>li {
+		float: left;
+		width: 33.3%;
+	}
+	
+	li.steps span.stepsTitle {
+		height: 60px;
+		font-size: 13px;
+	}
+
+	.navbar-header p.navbar-text {
+		font-size: 1.5rem;
+	}
+	
+	.productArea {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+
+@media only screen and (max-width: 992px) {
+	.products.col-md-6 {
+		opacity: 0;
+		display: none;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		z-index: 1031;
+		-webkit-transition: 0.5s all ease;
+		transition: 0.5s all ease;
+		width: 100%;
+	}
+	
+	.form-style-8 {
+		width: 100%;
+	}
+	
+	.productsBorder {
+		display: none;
+	}
+	
+	.productArea .products.col-md-6 {
+		background: rgba(0,0,0,0.75);
+	}	
+	
+	.scroller {
+		width: 50%;
+	}
+	
+	.scroller.up {
+		top: -615px;
+	}
+	
+	.desktopTutorial {
+		display: none;
+	}
+	
+	.tutorialSlideOne {
+		background-image: url('../tutorialslides/mobileslideone.jpg');
+		display: block;
+	}
+
+	.tutorialSlideTwo {
+		background-image: url('../tutorialslides/mobileslidetwo.jpg');
+	}
+	
+	.tutorialSlideThree {
+		background-image: url('../tutorialslides/mobileslidethree.jpg');
+	}
+	
+	.tutorialSlideFour {
+		background-image: url('../tutorialslides/mobileslidefour.jpg');
+	}
+	
+	.tutorialSlideFive {
+		background-image: url('../tutorialslides/mobileslidefive.jpg');
+	}
+	
+	a.mobileClose {
+		display: block;
+	}
+	
+	.modal-header h1 {
+		font-size: 26px;
+		margin: 5px 0;
+	}
+	
+	.slideTutorial {
+		height: 30rem;
+		width: 30rem;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	
+	.modalTextOne:after {
+		content: "Press the plus symbol to select the size of your custom pendant.";
+		font-weight: normal;
+	}
+	
+	.modalTextTwo:after {
+		content: "Select the number of buttons you need.";
+	}
+	
+	.modalTextThree:after {
+		content: "After clicking the plus symbol in step two, you can view all of the buttons and switches to place in your pendant. Press the i for wiring diagrams.";
+		margin-bottom: 15px;
+	}
+	
+	.modalTextFour:after {
+		content: "Press and drag the button or switch you want to the position you need it. When it lights up, the button can be placed.";
+	}
+	
+	.modalTextFive:after {
+		content: "When everything looks correct, fill in your contact information and our sales team will get in touch to configure your custom pendant!";
+		margin-bottom: 15px;
+	}
+	ul.flexContainer{
+	  display: -webkit-box;
+	}
+}
+
+.button > i.deleteButton.review {
+	display: none;
+}
+
+@media print {
+	.products.col-md-5 {
+		max-height: 3000px;
+		min-height: 2500px;
+	}		
+	
+	body {
+		width: 100%;
+		margin: 0; padding: 0;
+		background: none;
+	}
+	
+	html {
+		font-size: 3px;
+	}
+	
+	.infoDisplay {
+		font-size: 10px;
+	}
+	
+	.infoDisplay strong {
+		font-size: 10px;
+	}
+	
+	.clear, nav, .container.marginTop, div#hoverScroll, .navButtons, ::-webkit-scrollbar, .button > i.deleteButton, ul.progressSteps, .products.col-md-6, .modal {
+		display: none;
+	} 
+	
+	* {
+		margin: 0;
+		padding: 0;
+	}
+}
+/*alerts styling*/
+#emptyAlert{
+	display: none;
+}
+#lengthAlert{
+	display: none;
+}
+#emptyAlert{
+	display: none;
+}
+
+#choosePendantRight .flexItem {
+	width: 250px;
+}
+#chooseCableRight .flexItem {
+	width: 220px;
+}
+
+body .ui-tooltip {
+    background: #F44336;
+    color: white;
+}
+
+.ui-tooltip-content {
+	font-size: 2rem;
+}
+
+#estimated-price, .bottomText{
+	font-size: 35px;
+	color: white;
+	font-weight: bold
+}
+.noShow{
+	display:none;
+}
+.partPrice{
+	font-size:19px;color:#66BB6A;float:right;margin-right:5px
+}
+label.error{
+	color:red;
+}
+form#submitform label{
+	margin-bottom:0;
+	display: block;
+	clear: both;
+}
